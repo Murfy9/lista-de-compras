@@ -2,10 +2,12 @@ let listaDeItens = [];
 
 const form = document.getElementById("form-itens");
 const itensInput = document.getElementById("receber-item");
+const ulITens = document.getElementById("lista-de-itens");
 
 form.addEventListener("submit", function (evento) {
   evento.preventDefault();
   salvarItens();
+  mostrarItem();
 });
 
 function salvarItens() {
@@ -23,4 +25,21 @@ function salvarItens() {
   }
 
   console.log(listaDeItens);
+}
+
+function mostrarItem() {
+  ulITens.innerHTML = "";
+  listaDeItens.forEach((elemento, index) => {
+    ulITens.innerHTML += `
+    <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+        <div>
+            <input type="checkbox" class="is-clickable" />
+            <input type="text" class="is-size-5" value="${elemento.valor}"></input>
+        </div>
+        <div>
+            <i class="fa-solid fa-trash is-clickable deletar"></i>
+        </div>
+    </li>
+    `;
+  });
 }
