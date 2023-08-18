@@ -1,38 +1,25 @@
-#Projeto Lista de Compras - Utilizado no Curso Objetos no JavaScript - Escola Front-End Alura
+<div align="center">
+<h1>📚  Lista de Compras<br/>
+Curso na Alura - JavaScript: manipulando objetos</h1>
 
-Neste arquivo encontram-se modelos de códigos que serão utilizados no decorrer do curso. 
+<h2>Revendo o que são e como manipular objetos no JavaScript, e armazenando dados no navegador com a API localStorage.</h2>
+</div>
 
-Código modelo da li "Comprados":
+## 🔨 Tecnologias utilizadas durante o curso
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" checked class="is-clickable" />  
-            <span class="itens-comprados is-size-5"></span>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
+ 📚 JavaScript
 
-Código modelo da li "Lista de compras": 
+## 📚 Aprendizado
 
-    <li class="item-compra is-flex is-justify-content-space-between" data-value="">
-        <div>
-            <input type="checkbox" class="is-clickable" />
-            <input type="text" class="is-size-5" value=""></input>
-        </div>
-        <div>
-            <i class="fa-solid fa-trash is-clickable deletar"></i>
-        </div>
-    </li>
-
-Input com código refatorado:
-
-    <div>
-        <input type="checkbox" checked class="is-clickable" />  
-        <span class="itens-comprados is-size-5">${elemento.valor}</span>
-    </div>
-
-Ícones de edição:
-
-    <i class="fa-regular fa-floppy-disk is-clickable"></i><i class="fa-regular is-clickable fa-pen-to-square editar"></i>
+- O que é objetos em JavaScript, como criar objetos, editar e deletar valores.
+- Diferença entre var, let e const.
+- Renderizar objetos na página.
+- Unir funções e eventos para manipular objeto no DOM, alterando o valor de sua chave.
+- O que é escopo léxico no JavaScript.
+- Método Callback em um array de objetos.
+- Melhorando a experiência da pessoa usuária na utilização do projeto.
+- Utilizando de métodos do JavaScript que possibilitam remover, editar, adicionar e substituir elementos de um array, contextualizando com objetos.
+- Métodos para tratar dados e salvá-los no localStorage;
+- Utilizando o JSON para viabilizar a transferência de dados para uma API.
+- Métodos setItem e getItem para enviar e recuperar dados.
+- O this no JavaScript.
